@@ -1,0 +1,7 @@
+philo
+*.dSYM
+*.o
+.vscode
+.DS_Store
+a.out
+
