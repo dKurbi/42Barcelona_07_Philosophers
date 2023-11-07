@@ -6,7 +6,7 @@
 /*   By: dkurcbar <dkurcbar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/01 14:10:38 by dkurcbar          #+#    #+#             */
-/*   Updated: 2023/11/07 16:42:52 by dkurcbar         ###   ########.fr       */
+/*   Updated: 2023/11/07 18:08:53 by dkurcbar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,6 +47,7 @@ void	free_all(t_info *info)
 	pthread_detach(info->thread_is_dead);
 	free(info->mutex_last_eat);
 	free(info->mutex_is_dead);
+	free(info->mutex_fork);
 	free(info->thread);
 	free(info->philo);
 	free(info->fork_used);
